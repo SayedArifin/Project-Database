@@ -133,19 +133,23 @@
   <body>
     <div class="main-block">
       <h1>Registration</h1>
-      <form action="insert.php" method="post">
+      <form >
        <hr>
-        <label id="icon" for="name"><i class="fas fa-envelope"></i></label>
-        <input type="text" name="name" id="name" placeholder="Email" required/>
+        <label id="icon" for="email"><i class="fas fa-envelope"></i></label>
+        <input type="text" name="email" id="email" placeholder="Email" required/>
+
         <label id="icon" for="name"><i class="fas fa-user"></i></label>
         <input type="text" name="name" id="name" placeholder="Name" required/>
-        <label id="icon" for="name"><i class="fas fa-unlock-alt"></i></label>
-        <input type="password" name="name" id="name" placeholder="Password" required/>
+
+
+        <label id="icon" for="password"><i class="fas fa-unlock-alt"></i></label>
+        <input type="password" name="password" id="password" placeholder="Password" required/>
        
         <div class="gender">
-          <input type="radio" value="none" id="male" name="gender" checked/>
+          <input type="radio" value="Male" id="male" name="genderS" checked/>
           <label for="male" class="radio">Male</label>
-          <input type="radio" value="none" id="female" name="gender" />
+          
+          <input type="radio" value="Female" id="female" name="genderS" />
           <label for="female" class="radio">Female</label>
         </div>
         
@@ -326,15 +330,15 @@
 <label for="Qualification" class="control-label">Qualification</label>
  <div align="left">
 <td>
-<input type="checkbox" name="HighSchool" value="High School" />
+<input type="checkbox" name="HighSchool" value="High School" id="sc10" />
 High School(10th)<br>
-<input type="checkbox" name="HigherSchool" value="Higher School" />
+<input type="checkbox" name="HigherSchool" value="Higher School" id="sc12" />
 Higher School(12th)<br/>
-<input type="checkbox" name="Graduation" value="Graduation" />
+<input type="checkbox" name="Graduation" value="Graduation" id="scb" />
 Graduation(Bachelors)<br/>
-<input type="checkbox" name="PostGraduation" value="Post Graduation" />
+<input type="checkbox" name="PostGraduation" value="Post Graduation" id="scm" />
 Post Graduation(Masters)<br/>
-<input type="checkbox" name="Phd" value="Phd">
+<input type="checkbox" name="Phd" value="Phd" id="phd">
 Phd
 </td>
 </tr>
@@ -342,9 +346,10 @@ Phd
   <hr>
 
           <p>By clicking Submit, you agree on our Privacy Policy for  <a href="https://manarat.ac.bd/">Manarat International University</a>.</p>
-          <button type="submit" href="/">Submit</button>
+          <button type="submit" id="submit" >Submit</button>
         </div>
       </form>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>
